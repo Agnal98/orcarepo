@@ -1,0 +1,67 @@
+global-message:
+  error:
+    OI-100:  DuplicateDataException
+    OI-101:  DataNotFoundException
+    UPS-203: Invalid operation
+    UPS-204: No Resource
+    UPS-207: Duplicate value found
+    UPS-208: Request Object is Null
+    UPS-220: Date format is not correct
+    UPS-230: Cyclic Dependency Occured in Parent
+    UPS-305: Invalid data
+    UPS-304: Cannot be modified
+    UPS-500: Unknown exception contact admin
+    UPS-501: Not yet implemented
+    UPS-400: Bad request. Validation failed for the request.
+    UPS-504: Business component not found
+    NETS-404: Configration not found
+    NETS-405: Duplicate element found
+    NETS-600: Operation Failed
+    UPS-601: Holiday Not Allowed For CUTOFF
+    UPS-602: File not found
+    NETS-800: No Resource
+    NETS-801: Table Name is not available
+    NETS-802: Table Name already exist
+    NETS-803: Some Fields are not available
+    NETS-804: Entity Details Are Not Available
+    NETS-805: Schema Name is Null
+    UPS-209: Some Field details are missing
+    UPS-210: Empty Table Details
+    UPS-211: Source path not found
+    UPS-212: Null Join Type
+    UPS-213: Many To Many Join Not Implemented
+    UPS-214: Some Table Details are missing
+    UPS-215: Unable to create class
+    UPS-216: Error while querying
+    UPS-217: Entry cannot be deleted. Entry exists as Parent Id
+    UPS-218: DynamicField Value Null
+    UPS-219: DynamicField Value Pattern Validation failed
+    UPS-406: Interprocess communication failed
+    UPS-805: Database Operation Failed
+    NETS-707: Table Id Not Found
+    NETS-708: Table Id Exists
+    NETS-709: Fieldtype is missing
+    NETS-710: Required is Missing
+    NETS-711: Is Searchable Missing
+    NETS-712: Is Join Missing
+    NETS-713: Invalid Join type
+    NETS-714: Join Field Missing
+    NETS-715: Field Name Missing
+    NETS-716: Join Table Missing
+    UPS-222: Data already saved
+    UPS-223: There are active Branches
+    UPS-224: DynamicField Value Error
+    UPS-225: Please Fill Remarks
+    UPS-226: Operation Already Performed
+  info:
+    UPS-202: created successfully
+    UPS-205: Deleted successfully
+    UPS-206: Updated successfully
+    UPS-302: Message sent successfully
+    UPS-502: Password validation policy successfully
+    NETS-700: Drop Table successfully
+    NETS-701: Alter Table successfully
+    NETS-702: Table Created successfully
+    NETS-703: Column Added Successfully
+    NETS-704: Column Droped Successfully
+    NETS-705: Column Altered Successfully

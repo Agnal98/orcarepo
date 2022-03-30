@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    include: messages    
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:192.168.0.10}:3306/orca
+    username: root
+    password: Inn0biz@2021
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update

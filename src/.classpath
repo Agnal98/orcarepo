@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="main/java"/>
+	<classpathentry excluding="com/innobiz/orca/appconfig/" kind="src" path="test/java"/>
+	<classpathentry kind="src" path="test/java/com/innobiz/orca/appconfig"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

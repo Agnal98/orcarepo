@@ -1,0 +1,16 @@
+server:
+ port: 8081
+spring:
+  profiles:
+    include: messages    
+  datasource:
+#    url: jdbc:mysql://${MYSQL_HOST:192.168.1.10}:3306/orca
+    url: jdbc:mysql://192.168.1.10:3306/orca
+    username: root
+    password: Inn0biz@2021
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQLDialect
+      hbm2ddl.auto: create

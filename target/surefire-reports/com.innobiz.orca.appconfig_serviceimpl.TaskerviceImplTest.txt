@@ -1,0 +1,67 @@
+-------------------------------------------------------------------------------
+Test set: com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 7, Errors: 5, Skipped: 0, Time elapsed: 0.769 s <<< FAILURE! - in com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest
+findAllShouldSendAllTasks  Time elapsed: 0.337 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMapper" is null
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.findAllShouldSendAllTasks(UOMServiceImplTest.java:168)
+
+deleteUOMShouldDeleteTask  Time elapsed: 0.036 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+uomRepository.delete(
+    com.innobiz.orca.appconfig.entity.UOM@7e7f0f0a
+);
+-> at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.deleteUOMShouldDeleteTask(UOMServiceImplTest.java:248)
+
+However, there was exactly 1 interaction with this mock:
+uomRepository.findById(1);
+-> at com.innobiz.orca.appconfig.service.impl.UOMServiceImpl.delete(UOMServiceImpl.java:54)
+
+
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.deleteUOMShouldDeleteTask(UOMServiceImplTest.java:248)
+
+getUOMByNameShouldSendTask  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMapper" is null
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.getUOMByNameShouldSendTask(UOMServiceImplTest.java:218)
+
+updateUOMShouldFailIfTaskNotFound  Time elapsed: 0.015 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <com.innobiz.orca.appconfig.exception.DataNotFoundException> but was: <com.innobiz.orca.appconfig.exception.DuplicateDataException>
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.updateUOMShouldFailIfTaskNotFound(UOMServiceImplTest.java:144)
+Caused by: com.innobiz.orca.appconfig.exception.DuplicateDataException
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.lambda$updateUOMShouldFailIfTaskNotFound$2(UOMServiceImplTest.java:145)
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.updateUOMShouldFailIfTaskNotFound(UOMServiceImplTest.java:144)
+
+getUOMByNameShouldThrowErrorIfTaskNotFound  Time elapsed: 0.009 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <File not found> but was: <null>
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.getUOMByNameShouldThrowErrorIfTaskNotFound(UOMServiceImplTest.java:233)
+
+getUOMByIdShouldThrowExceptionIfTaskNotFound  Time elapsed: 0.008 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <File not found> but was: <null>
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.getUOMByIdShouldThrowExceptionIfTaskNotFound(UOMServiceImplTest.java:206)
+
+createUOMSuccessFullyOnValidData  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMapper" is null
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.createUOMSuccessFullyOnValidData(UOMServiceImplTest.java:74)
+
+getUOMByIdShouldReturnUniqueTask  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMapper" is null
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.getUOMByIdShouldReturnUniqueTask(UOMServiceImplTest.java:189)
+
+createUOMShouldFailIfTaskAlreadyExists  Time elapsed: 0.008 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Duplicate value found> but was: <null>
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.createUOMShouldFailIfTaskAlreadyExists(UOMServiceImplTest.java:109)
+
+deleteUOMShouldFailIfTaskNotFound  Time elapsed: 0.006 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <File not found> but was: <null>
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.deleteUOMShouldFailIfTaskNotFound(UOMServiceImplTest.java:264)
+
+updateUOMSuccessFullyOnValidData  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, Object)" because "this.modelMapper" is null
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.updateUOMSuccessFullyOnValidData(UOMServiceImplTest.java:126)
+
+createUOMShouldFailIfProvidedIdInRequest  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Duplicate value found> but was: <null>
+	at com.innobiz.orca.appconfig_serviceimpl.TaskerviceImplTest.createUOMShouldFailIfProvidedIdInRequest(UOMServiceImplTest.java:92)
+
